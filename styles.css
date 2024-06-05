@@ -12,3 +12,28 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+.section1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
