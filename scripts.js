@@ -51,3 +51,55 @@ function bloquearTarjetas() {
 }
 
 
+function destapar(id) {
+    if(temporizador == false) {
+        contarTiempo();
+        temporizador = true;
+    }
+
+    tarjetasDestapadas++;
+
+    if(tarjetasDestapadas == 1) {
+        tarjeta1 = document.getElementById(id);
+        primerResultado = numeros[id];
+        tarjeta1.innerHTML = `<img src="./img/${primerResultado}.png>"`;
+        clickAudio.play();
+
+        tarjeta1.disabled = true;
+    } else if(tarjetasDestapadas == 2) {
+        tarjeta2 = document.getElementById(id);
+        segundoResultado = numeros[id];
+        tarjeta2.innerHTML = `<img src="./img/${segundoResultado}.png>"`;
+
+        tarjeta2.disabled = true;
+
+        movimientos++;
+        mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}`;
+
+        if(primerResultado == segundoResultado) {
+            rightAudio.play();
+            tarjetasDestapadas = 0;
+
+            aciertos++;
+            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
+
+            if(aciertos == 8) {
+                winAudio.play();
+                clearInterval(tiempoRegresivoId);
+                mostrarAciertos.innerHTML = `Aciertos: ${aciertos} 🤩`;
+                mostrartiempo.innerHTML = `Fantastico! Solo demoraste ${timerInicial - timer} segundos.`;
+                mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎`;
+            }
+
+        } else {
+            wrongAudio.play();
+            setTimeout(() => {
+                tarjeta1.innerHTML = ' ';
+                tarjeta2.innerHTML = ' ';
+                tarjeta1.disabled = false;
+                tarjeta2.disabled = false;
+                tarjetasDestapadas = 0;
+            }, 800);
+        }
+    }
+}
