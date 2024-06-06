@@ -17,3 +17,9 @@ let rightAudio = new Audio('./sounds/acierto.wav');
 let wrongAudio = new Audio('./sounds/fallo.wav');
 let clickAudio = new Audio('./sounds/click.wav');
 
+let mostrarMovimientos = document.getElementById('movimientos');
+let mostrarAciertos = document.getElementById('aciertos');
+let mostrartiempo = document.getElementById('t-restante');
+
+let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
+
