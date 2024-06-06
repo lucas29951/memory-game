@@ -40,3 +40,14 @@ function contarTiempo() {
         }
     }, 1000);
 }
+
+
+function bloquearTarjetas() {
+    for(let i = 0; i <= 15; i++) {
+        let tarjetaBloqueada = document.getElementById(i);
+        tarjetaBloqueada.innerHTML = `<img src="./img/${numeros[i]}.png">`;
+        tarjetaBloqueada.disabled = true;
+    }
+}
+
+
