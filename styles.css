@@ -58,3 +58,23 @@ img {
     padding: 8px 20px;
     box-sizing: border-box;
 }
+
+
+@media (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+
+    .section2 {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 689px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
