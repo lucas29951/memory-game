@@ -52,15 +52,15 @@ Si deseas contribuir a mejorar el juego, puedes hacer lo siguiente:
 4. Envía tus cambios (`git push origin feature/nueva-funcionalidad`).
 5. Crea un Pull Request en este repositorio.
 
-## Contacto
-
-Para sugerencias o comentarios, puedes contactarme a través de mi perfil de GitHub.
-
 ## Créditos
 
 Este proyecto fue realizado en base al proyecto de [CodingTube](https://github.com/CodinGitHub). Agradezco al autor por compartir sus conocimientos y recursos.
 
 Puedes encontrar el video de como realizarlo en el siguiente enlace: [Enlace del video](https://youtu.be/TMWkKPlUUJ4?list=PLCnOTSLuGRSFfA1mB3ILWZzDDRr69KCyR).
+
+## Contacto
+
+Para sugerencias o comentarios, puedes contactarme a través de mi perfil de GitHub.
 
 
 ---
